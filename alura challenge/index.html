@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style.css">
+  <script src="script/script.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css" />
+  <link rel="shortcut icon" href="assets/entrada.png" type="image/x-icon">
+  <title>Criptografia</title>
+
+</head>
+
+<body>
+
+  <section class="card-cod">
+    <div>
+      <img src="assets/Logo.png" alt="logo da alura">
+    </div>
+    <div class="texto">
+      <textarea id="texto" rows="4" placeholder="Digite seu texto" cols="50"></textarea>
+    </div>
+    <div class="buttons">
+      <button class="button cripto" onclick="criptografar()">Criptografar</button>
+      <button class="button descripto" onclick="descriptografar()">Descriptografar</button>
+    </div>
+  </section>
+  <section class="card-result">
+    <div class="default " id="default">
+      <img src="assets/pessoa.png" alt="">
+      <p class="titulo">Nenhuma mensagem recebida</p> 
+      <p class="sub-titulo">Digite um texto que você deseja criptografar ou descriptografar.</p>     
+    </div>
+    <div class="result hide" id="boxResult"> 
+      <p id="result"></p>
+      <button class="button copy" onclick="copiar()">Copiar</button>
+    </div>
+  </section>
+  
+
+
+
+
+</body>
+
+</html>
